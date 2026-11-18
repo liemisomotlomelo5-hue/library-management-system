@@ -1,0 +1,79 @@
+.transactions-page h1 {
+  margin-bottom: 1.5rem;
+  color: #1a365d;
+}
+
+.tx-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tx-form select {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: white;
+}
+
+.tx-form select:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+.tx-table-wrapper {
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tx-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tx-table th,
+.tx-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tx-table th {
+  background: #f7fafc;
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.tx-table tr:hover {
+  background: #f7fafc;
+}
+
+.tx-badge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.tx-badge.borrow {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.tx-badge.return {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+.tx-badge.add_stock {
+  background: #bee3f8;
+  color: #2b6cb0;
+}

@@ -1,0 +1,122 @@
+.dashboard h1 {
+  margin-bottom: 1.5rem;
+  color: #1a365d;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border-left: 4px solid #3182ce;
+}
+
+.stat-card.warning {
+  border-left-color: #dd6b20;
+}
+
+.stat-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #2d3748;
+}
+
+.low-stock-alert {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  color: #92400e;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.books-table-wrapper {
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books-table th,
+.books-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.books-table th {
+  background: #f7fafc;
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.books-table tr:hover {
+  background: #f7fafc;
+}
+
+.low-stock-row {
+  background: #fffbeb !important;
+}
+
+.qty-low {
+  color: #c05621;
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge.available {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+.badge.low {
+  background: #feebc8;
+  color: #c05621;
+}
+
+.badge.out {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.loading, .error, .empty {
+  text-align: center;
+  padding: 3rem;
+  color: #718096;
+}
+
+.error {
+  color: #c53030;
+}
